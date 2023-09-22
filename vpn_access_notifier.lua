@@ -27,7 +27,7 @@ while(true) do
         if response.err then
             logger("info", "error response: " .. response.err)
         else
-            rt.syslog("info", "A notification has been sent.")
+            logger("info", "A notification has been sent.")
         end
     end
 end 
