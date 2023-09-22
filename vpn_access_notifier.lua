@@ -26,8 +26,10 @@ while(true) do
         })
         if response.err then
             logger("info", "error response: " .. response.err)
-        else
+        elseif response.code == 200 then
             logger("info", "A notification has been sent.")
+        else
+            logger("info", "Bad response code: " .. response.code)
         end
     end
-end 
+end
