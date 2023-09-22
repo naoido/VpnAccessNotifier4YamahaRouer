@@ -18,5 +18,5 @@ lua /lua/vpn_access_notifier.lua
   
 > Set script schedule
 ```
-schedule at ${task id} startup * /lua/vpn_access_notifier.lua
+schedule at ${schedule id} startup * lua /lua/vpn_access_notifier.lua
 ```
